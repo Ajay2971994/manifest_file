@@ -11,5 +11,10 @@ spec:
   project: default
   source:
     repoURL: https://github.com/Ajay2971994/manifest_file.git
-    path: .  
+    path: .
+    ref: main
+  syncPolicy:
+    automated:
+      enabled: true    
+
 
