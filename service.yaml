@@ -7,7 +7,8 @@ metadata:
     app.kubernetes.io/name: argo-nginx
 spec:
   type: LoadBalancer
-  selector: argo-nginx
+  selector: 
+    app.kubernetes.io/name: argo-nginx
   ports:
   - port:  80
     targetPort:  80
