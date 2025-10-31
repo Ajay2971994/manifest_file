@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Applicaiton
+metadata:
+  name: ajay-app
+  namespace: argocd-ajay
+spec:
+  destination:
+    name:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: https://github.com/Ajay2971994/manifest_file.git
+    path: .  
+
