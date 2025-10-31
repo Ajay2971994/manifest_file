@@ -1,5 +1,5 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Applicaiton
+kind: Application
 metadata:
   name: ajay-app
   namespace: argocd-ajay
@@ -16,5 +16,6 @@ spec:
   syncPolicy:
     automated:
       enabled: true    
+
 
 
